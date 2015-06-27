@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_drawable">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/campus_event_logo"
+        android:src="@drawable/campus_event_text_logo"
+        android:layout_centerInParent="true" />
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/campus_event_logo"
+        android:layout_marginTop="7dp"
+        android:indeterminateDrawable="@xml/progress_color"
+        android:id="@+id/progress"
+        android:visibility="visible"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Retry"
+        android:id="@+id/retry"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/campus_event_logo"
+        android:layout_marginTop="7dp"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Setting up..."
+        android:id="@+id/splash_text"
+        android:textColor="#ff8000"
+        android:textSize="18sp"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/progress"
+        android:layout_marginTop="5dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No Network"
+        android:id="@+id/no_network"
+        android:textColor="#ff8000"
+        android:textSize="18sp"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/retry"
+        android:layout_marginTop="5dp"
+        android:visibility="gone"
+        />
+
+
+
+</RelativeLayout>

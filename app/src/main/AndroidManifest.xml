@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="campusevents.michael.android.com.campusevents" >
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Base.ThemeOverlay.AppCompat.ActionBar" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity android:name=".PostEvent" android:label="Post Event"
+                  >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity android:name=".SplashActivity" android:screenOrientation="portrait" android:noHistory="true" android:clearTaskOnLaunch="false" android:finishOnTaskLaunch="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MoreInfoActivity" android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <provider
+            android:exported="true"
+            android:authorities="campusevents.michael.android.com.campusevents.provider"
+            android:name=".CampusEventContentProvider" />
+        <service android:name=".SyncData" android:exported="false"/>
+        <receiver android:name=".SyncDataReceiver" >
+            <intent-filter><action android:name="android.intent.action.BOOT_COMPLETED" /> </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

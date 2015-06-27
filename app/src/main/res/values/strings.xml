@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Campus Events</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="date1">Mon 12th June, 2015</string>
+    <string name="date2">Tue 13th June, 2015</string>
+    <string name="title1">Rock till mid nite</string>
+    <string name="title2">Jack till u become Jack Bauer</string>
+    <string name="venue1">Jives</string>
+    <string name="venue2">Nite Class Arena</string>
+    <string name="validation_title">Enter title and press post button again!</string>
+    <string name="validation_venue">Enter venue and press post button again!</string>
+    <string name="validation_organizer">Enter organizer and press post button again!</string>
+    <string name="validation_category">Pick a Category</string>
+    <string name="validation_date">Choose a Date</string>
+    <string name="validation_time">Choose a Time</string>
+    <string name="validation_body">Enter body and press post button again!</string>
+
+</resources>

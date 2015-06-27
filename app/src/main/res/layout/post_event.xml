@@ -1,0 +1,289 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#ddd"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#FFFFFF">
+
+           <View
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:background="#ddd"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"/>
+
+            <EditText
+            android:id="@+id/post_event_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Title of the Event"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:background="@drawable/post_event_selector"
+            android:gravity="start"
+            android:textSize="18sp"
+            android:textColor="#222"
+            android:textColorHint="#ddd"
+            android:clickable="true"
+            android:imeOptions="actionNext"
+            android:singleLine="true"
+            android:lines="1"
+            android:maxLines="1"
+            android:scrollHorizontally="true"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:background="#E3A857"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"/>
+
+        <EditText
+            android:id="@+id/post_event_venue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Venue"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:background="@drawable/post_event_selector"
+            android:gravity="start"
+            android:textSize="18sp"
+            android:textColor="#222"
+            android:textColorHint="#ddd"
+            android:clickable="true"
+            android:imeOptions="actionNext"
+            android:singleLine="true"
+            android:lines="1"
+            android:maxLines="1"
+            android:scrollHorizontally="true"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:background="#E3A857"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"/>
+
+        <EditText
+            android:id="@+id/post_event_organizer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Organized by Whom?"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:textColorHint="#ddd"
+            android:textColor="#222"
+            android:background="@drawable/post_event_selector"
+            android:gravity="start"
+            android:textSize="18sp"
+            android:clickable="true"
+            android:imeOptions="actionNext"
+            android:singleLine="true"
+            android:lines="1"
+            android:maxLines="1"
+            android:scrollHorizontally="true"
+            android:focusable="true"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:background="#E3A857"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"/>
+
+
+        <EditText
+            android:id="@+id/post_event_body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Describe the event "
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:background="@drawable/post_event_selector"
+            android:gravity="start"
+            android:textSize="18sp"
+            android:textColor="#222"
+            android:textColorHint="#ddd"
+            android:clickable="true"
+            android:scrollbars="vertical"
+            android:imeOptions="actionDone"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:background="#F8DE7E"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"/>
+
+        <EditText
+            android:id="@+id/post_event_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Pick a Category"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:background="@drawable/post_event_selector"
+            android:gravity="start"
+            android:textSize="18sp"
+            android:textColor="#222"
+            android:textColorHint="#ddd"
+            android:clickable="true"
+            android:imeOptions="actionNext"
+            android:focusable="false"
+            android:editable="false"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:background="#F8DE7E"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#FFFFFF">
+
+
+            <EditText
+                android:id="@+id/post_event_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Select Date "
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="20dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:background="@drawable/post_event_selector"
+                android:gravity="start"
+                android:textSize="18sp"
+                android:clickable="true"
+                android:editable="false"
+                android:focusable="false"
+                android:textColor="#222"
+                android:textColorHint="#ddd"
+
+                />
+            <EditText
+                android:id="@+id/post_event_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Pick Time"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:background="@drawable/post_event_selector"
+                android:gravity="right"
+                android:textSize="18sp"
+                android:textColor="#222"
+                android:textColorHint="#ddd"
+                android:clickable="true"
+                android:editable="false"
+                android:focusable="false"
+
+                />
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:background="#F8DE7E"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:clickable="true"
+            android:textColor="#ddd"
+            android:text="Select Image"
+            android:background="@drawable/post_event_selector"
+            android:id="@+id/post_event_pick_image"
+            android:editable="false"
+            android:focusable="false"
+            />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            android:id="@+id/image_plaeholder_post_event"
+            android:visibility="gone"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:background="#F8DE7E"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Post Event"
+            android:textSize="25sp"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/post_event_btn"
+            android:enabled="true"
+            android:background="@drawable/post_event_selector_btn"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:background="@drawable/post_event_selector"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="15dp"/>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+</ScrollView>
